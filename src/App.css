@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  
+}
+
+.App{
+  width: 100%;
+  min-height: 100%;
+  text-align: justify;
+  font-size: 25px;
+}
+
+
+.home-search-box{
+  height: 60px
+}
+
+.home-search-box>input {
+  position: relative;
+  color: #d30707;
+  margin-left: 18px;
+  font-size: 1.6em;
+  width: 100%;
+}
+
+.home-search-box>.search-submit-button{
+  position: relative;
+  left: -140px;
+}
+
+.home-search-box>.search-barcode-button{
+  position: relative;
+  left: -40px;
+
+}
+
+button .icon{
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
