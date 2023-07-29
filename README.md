@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# DrugBasket 🧺
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DrugBasket is a simple React application that allows users to search for drug information based on the drug name. The app fetches drug information from the FDA API and displays it in a Bootstrap 5-styled component. While waiting for the API response, a loading skeleton is shown using the "react-content-loader" library, providing users with visual feedback.
 
-## Available Scripts
+## Features 🌟
 
-In the project directory, you can run:
+- Search for drug information by entering the drug name in the input field.
+- Fetch drug data from the FDA API based on the entered drug name.
+- Display drug information, including brand name, generic name, and substance name, in a Bootstrap 5-styled card.
+- Show a loading skeleton while waiting for the API response to give users visual feedback.
 
-### `yarn start`
+## Getting Started 🚀
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow the instructions below to set up and run the DrugBasket app on your local machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites 📦
 
-### `yarn test`
+Before you begin, make sure you have the following software installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 14.x or higher)
+- npm (version 6.x or higher)
 
-### `yarn build`
+### Installation 💻
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository or download the source code as a ZIP file.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone <repository_url>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory.
 
-### `yarn eject`
+```bash
+cd drug-basket
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the project dependencies using npm.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the App 🚀
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the app, use the following npm command:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app should now be running on [http://localhost:3000](http://localhost:3000) in your web browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### How to Use 📝
 
-### Code Splitting
+1. Open the DrugBasket app in your web browser using the provided URL (usually [http://localhost:3000](http://localhost:3000)).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Enter the drug name in the input field and click the "Search" button.
 
-### Analyzing the Bundle Size
+3. While the app is fetching drug information from the FDA API, a loading skeleton will be displayed to indicate that data is being loaded.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Once the API fetch is complete, the drug information will be displayed in a Bootstrap-styled card.
 
-### Making a Progressive Web App
+### Customize the Loading Skeleton 🌈
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You can customize the loading skeleton according to your design preferences by modifying the `SkeletonLoader` component in the `App.js` file. The "react-content-loader" library provides several options to customize the shape, speed, and colors of the loading skeleton.
 
-### Advanced Configuration
+```jsx
+// Example customization for the SkeletonLoader component
+<ContentLoader
+  speed={2}
+  width={300}
+  height={100}
+  viewBox="0 0 300 100"
+  backgroundColor="#f3f3f3"
+  foregroundColor="#ecebeb"
+>
+  {/* Customize the skeleton loader here */}
+  <rect x="0" y="0" rx="3" ry="3" width="250" height="10" />
+  <rect x="0" y="20" rx="3" ry="3" width="200" height="10" />
+  {/* Add more rectangles or other shapes as needed */}
+</ContentLoader>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### About the API 🌐
 
-### Deployment
+The DrugBasket app uses the FDA API to fetch drug information. The API URL is constructed based on the entered drug name, and the data is fetched using the `fetch` function in JavaScript.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+For more information about the FDA API, please visit [FDA Open Data](https://open.fda.gov/apis/).
 
-### `yarn build` fails to minify
+## Contributing 🤝
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions to the DrugBasket app are welcome! If you find any issues or want to add new features, feel free to submit a pull request.
+
+## License 📄
+
+The DrugBasket app is released under the [MIT License](LICENSE).
+
+---
+
+Thank you for using the DrugBasket app! If you have any questions or need further assistance, feel free to contact the project contributors. Happy drug searching! 🧺🌿
