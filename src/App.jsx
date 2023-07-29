@@ -6,7 +6,6 @@ import Header from './components/Header';
 import Search from './components/Search';
 import Main from "./components/Main";
 import Footer from './components/Footer';
-import Result from './components/result';
 
 function App() {
   

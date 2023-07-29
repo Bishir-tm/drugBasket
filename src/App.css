@@ -5,9 +5,13 @@
   
 }
 
+html{
+  min-height: 100%;
+
+}
+
 .App{
   width: 100%;
-  min-height: 100%;
   text-align: justify;
   font-size: 25px;
 }
