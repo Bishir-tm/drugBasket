@@ -31,18 +31,18 @@ html{
 
 .home-search-box>.search-submit-button{
   position: relative;
-  left: -140px;
+  /* left: -140px; */
 }
-
+/* 
 .home-search-box>.search-barcode-button{
   position: relative;
   left: -40px;
-
-}
+} */
 
 button .icon{
   background-color: transparent;
   width: 30px;
   height: 30px;
+  /* color: #b7e2ef; */
 }
 

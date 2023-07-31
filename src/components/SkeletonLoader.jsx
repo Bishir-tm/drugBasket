@@ -4,11 +4,12 @@ export default function SkeletonLoader(){
   return(
     <ContentLoader 
       speed={2}
-      width={300}
-      height={100}
+      width={Window.innerWidth - 10}
+      height={800}
       viewBox="0 0 300 100"
-      backgroundColor="#f3f3f3"
-      foregroundColor="#ecebeb"
+      backgroundColor="#f1f1f1"
+      foregroundColor="#b7e2ef"
+
     >
       {/* Customize the skeleton loader here */}
       <rect x="0" y="0" rx="3" ry="3" width="250" height="10" />
