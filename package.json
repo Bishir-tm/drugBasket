@@ -1,6 +1,7 @@
 {
-  "name": "drug-basket",
+
   "homepage": "bishir-tm.github.io/drugBasket" ,
+  "name": "drug-basket",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
